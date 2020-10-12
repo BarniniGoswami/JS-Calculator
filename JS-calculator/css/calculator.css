@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+    width: 400px;
+    /* border:3px solid red; */
+    background:black;
+    color:white;
+}
+.calc-button-row{
+    /* border:1px solid blue; */
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin:0.5%;
+}
+.screen{
+    text-align:right;
+    font-family:'Courier New', Courier, monospace;
+    padding:20px 5px;
+    font-size:2rem;
+}
+.calc-button{
+    background:#d8d9dd;
+    color:black;
+    border:none;
+    font-size:1.5rem;
+    height:100px;
+    /* the value is not 25% so as to have a thin black line before and after each button */
+    flex-basis:24.5%;
+    /* flex basis indicates how wide the element would be proportionate to our flex total area */
+}
+.calc-button:hover{
+    background:#ebebeb;
+}
+.calc-button:active{
+    background:#bbbcbe;
+}
+.calc-button:last-child{
+    color:white;
+    background:#df974c;
+}
+.calc-button:last-child:hover{
+    background:#dfb07e;
+}
+.double{
+    flex-basis:49.7%;
+}
+.triple{
+    flex-basis:74.8%;
+}
